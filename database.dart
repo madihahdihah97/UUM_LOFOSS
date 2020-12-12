@@ -27,9 +27,6 @@ class DatabaseService {
     });
   }
 
- 
-
-
   // lofossf list from snapshot
 
   List<Lofossf> _lofossListFromSnapshot(QuerySnapshot snapshot) {
@@ -57,19 +54,12 @@ class DatabaseService {
   }
 
 
-
-
-
-
-
 // get uumlofossfound stream
 
 Stream <List<Lofossf>> get uumlofossfound{
   return uumlofossCollection.snapshots()
   .map(_lofossListFromSnapshot);
 }
-
-
 
 
 // get user doc stream
