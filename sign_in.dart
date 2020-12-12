@@ -101,12 +101,9 @@ String error = '';
                        error = 'Could not sign in with those credentials'; 
                        loading =false;
                      });
-                     
-                    
                      }
                      
                    }
-
                  },
                ),
               SizedBox(height:12.0),
