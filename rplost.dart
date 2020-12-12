@@ -223,36 +223,10 @@ DatabaseReference _ref;
 
   };
 
- 
-   
    _ref.push().set(contact);
 
   
-    
-
-
-
-
-
-
-
-
-
-
-
-
-  
    
-
-
-
-
-
-
-
-
-
-
 
   }
     
