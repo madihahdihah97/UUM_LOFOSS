@@ -45,7 +45,7 @@ Future uploadPic(BuildContext context) async{
                         var Boxfit;
                                                return Scaffold(
                                                   appBar: AppBar(
-                                                    title: Text('IMAGE FOUND'),
+                                                    title: Text('IMAGE LOST'),
                                                     centerTitle: true,
                                                     leading: IconButton(
                                                       icon:Icon(Icons.arrow_left),
