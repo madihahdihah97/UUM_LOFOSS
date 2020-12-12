@@ -7,7 +7,6 @@ class Lofossf {
   final String deliverymethod;
   final String foundby;
 
-
   Lofossf({ this.item, this.color, this.wherefound, this.datefound, this.deliverymethod, this.foundby});
   
 }
