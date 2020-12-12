@@ -59,7 +59,7 @@ DatabaseReference _ref;
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("REGISTER PROFIL")
+        title: new Text("REGISTER PROFILE...")
         
       ) ,
       body: SafeArea(
