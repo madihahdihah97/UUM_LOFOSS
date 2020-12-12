@@ -1,28 +1,28 @@
 
+
 import 'package:flutter/material.dart';
 import 'package:uumlofoss/screenlofoss/home/aboutus.dart';
 import 'package:uumlofoss/screenlofoss/home/addprofilenew.dart';
 import 'package:uumlofoss/screenlofoss/home/application.dart';
 import 'package:uumlofoss/screenlofoss/home/foundreport.dart';
+import 'package:uumlofoss/screenlofoss/home/imageupload.dart';
 import 'package:uumlofoss/screenlofoss/home/lofossfound.dart';
 import 'package:uumlofoss/screenlofoss/home/newfound.dart';
 import 'package:uumlofoss/screenlofoss/home/piclost.dart';
+import 'package:uumlofoss/screenlofoss/home/uploadfound.dart';
+import 'package:uumlofoss/screenlofoss/home/uploadlost.dart';
+import 'package:uumlofoss/screenlofoss/home/uppiclostoter.dart';
 import 'package:uumlofoss/services/auth.dart';
+import 'package:uumlofoss/screenlofoss/home/uppiclostoter.dart';
 
 
 
 class Home extends StatefulWidget {
-  
-
   @override
   _HomeState createState() => _HomeState();
 }
-
 class _HomeState extends State<Home> {
-
 final AuthService _auth =AuthService();
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,8 +33,8 @@ final AuthService _auth =AuthService();
         backgroundColor: Colors.blue[900],
         elevation: 0.0,
         actions:<Widget> [
-          FlatButton.icon(icon:Icon(Icons.person),
-          label: Text('logout'),
+          FlatButton.icon(icon:Icon(Icons.person,color: Colors.pink[300],),
+          label: Text('logout', style: TextStyle(color: Colors.pink[300]),),
           onPressed: () async{
            await _auth.signOut();
           },
@@ -58,7 +58,7 @@ final AuthService _auth =AuthService();
             
             ),
             FlatButton(
-              padding: EdgeInsets.symmetric(horizontal:127.0, vertical:5.0),
+              padding: EdgeInsets.symmetric(horizontal:127.0, vertical:14.0),
               onPressed: (){
                 Navigator.push(
                   context, MaterialPageRoute(builder: (context)=>Aboutuslofoss()),
@@ -66,7 +66,7 @@ final AuthService _auth =AuthService();
               },
               color:Colors.blue[100],
               child: Text('ABOUT US',
-              style:TextStyle(color:Colors.black,letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
+              style:TextStyle(color:Colors.pink[800],letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
                ),
             ),
 
@@ -75,7 +75,7 @@ final AuthService _auth =AuthService();
             
             ),
             FlatButton(
-              padding: EdgeInsets.symmetric(horizontal:77.0, vertical:5.0),
+              padding: EdgeInsets.symmetric(horizontal:77.0, vertical:14.0),
               onPressed: (){
                 Navigator.push(
                   context, MaterialPageRoute(builder: (context)=>Applicationlofoss()),
@@ -83,7 +83,7 @@ final AuthService _auth =AuthService();
               },
               color:Colors.blue[100],
               child: Text('ABOUT APPLICATION',
-              style:TextStyle(color:Colors.black,letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
+              style:TextStyle(color:Colors.pink[800],letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
                ),
             ),
           
@@ -92,15 +92,15 @@ final AuthService _auth =AuthService();
             
             ),
             FlatButton(
-              padding: EdgeInsets.symmetric(horizontal:136.0, vertical:5.0),
+              padding: EdgeInsets.symmetric(horizontal:136.0, vertical:14.0),
               onPressed: (){
                 Navigator.push(
-                  context, MaterialPageRoute(builder: (context)=>Contacts()),
+                  context, MaterialPageRoute(builder: (context)=>Uploadlost()),
                   );
               },
               color:Colors.blue[100],
               child: Text('PROFILE',
-              style:TextStyle(color:Colors.black,letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
+              style:TextStyle(color:Colors.pink[800],letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
                ),
             ),
           
@@ -110,15 +110,15 @@ final AuthService _auth =AuthService();
             
             ),
             FlatButton(
-              padding: EdgeInsets.symmetric(horizontal:111.0, vertical:5.0),
+              padding: EdgeInsets.symmetric(horizontal:111.0, vertical:14.0),
               onPressed: (){
                 Navigator.push(
-                  context, MaterialPageRoute(builder: (context)=>Piclost()),
+                  context, MaterialPageRoute(builder: (context)=>Imageupload()),
                   );
               },
               color:Colors.blue[100],
               child: Text('REPORT LOST',
-              style:TextStyle(color:Colors.black,letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
+              style:TextStyle(color:Colors.pink[800],letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
                ),
             ),
             Divider(
@@ -128,15 +128,15 @@ final AuthService _auth =AuthService();
 
 
          FlatButton(
-              padding: EdgeInsets.symmetric(horizontal:104.0, vertical:5.0),
+              padding: EdgeInsets.symmetric(horizontal:104.0, vertical:14.0),
               onPressed: (){
                 Navigator.push(
-                  context, MaterialPageRoute(builder: (context)=>Foundreport()),
+                  context, MaterialPageRoute(builder: (context)=>Uppiclostoter()),
                   );
               },
               color:Colors.blue[100],
               child: Text('REPORT FOUND',
-              style:TextStyle(color:Colors.black,letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
+              style:TextStyle(color:Colors.pink[800],letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
                ),
             ),
 
@@ -145,7 +145,7 @@ final AuthService _auth =AuthService();
             
             ),
             FlatButton(
-              padding: EdgeInsets.symmetric(horizontal:100.0, vertical:8.0),
+              padding: EdgeInsets.symmetric(horizontal:100.0, vertical:14.0),
               onPressed: (){
                 Navigator.push(
                   context, MaterialPageRoute(builder: (context)=>Lofossfound()),
@@ -153,42 +153,16 @@ final AuthService _auth =AuthService();
               },
               color:Colors.blue[100],
               child: Text('HISTORY FOUND',
-              style:TextStyle(color:Colors.black,letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
+              style:TextStyle(color:Colors.pink[800],letterSpacing: 1.0,fontSize: 18.0,fontWeight: FontWeight.bold),
                ),
             ),
             
                Divider(
               height:10.0,
-            
             ),
-           
-
-
-
-
   ],
         ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-       ),
-
-
-
-
-
-
-        
+       ), 
       )
     );
   }
