@@ -19,9 +19,6 @@ class AuthService{
     //.map((FirebaseUser user) => _userFromFirebaseUser(user));
       .map(_userFromFirebaseUser);
   }
-
-
-
   // sign in anon
   Future signInAnon() async {
     try {
@@ -49,26 +46,15 @@ class AuthService{
     }
   }
 
-
-
-
   // register with email & password
   Future registerWithEmailAndPassword(String email, String password) async {
     try{
       AuthResult result = await _auth.createUserWithEmailAndPassword(email: email, password: password);
       FirebaseUser user = result.user;
 
-
   //      create a new document for the user with the uid
 
          await DatabaseService(uid: user.uid).updateUserData('new item','new color','new wherefound', 'new datefound');
-
-    
-          
-
-
-    
-
 
       return _userFromFirebaseUser(user);
     }catch(e){
@@ -76,7 +62,6 @@ class AuthService{
       return null;
     }
   }
-
   // sign out
   Future signOut() async{
     try{
@@ -86,30 +71,4 @@ class AuthService{
       return null;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
- 
-
-  
