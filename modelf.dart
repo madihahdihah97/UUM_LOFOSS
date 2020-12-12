@@ -10,5 +10,6 @@ class Model {
   String email;
   String password;
 
+
   Model({this.item, this.color, this.wheref, this.datef, this.fby, this.deliverymethod, this.email, this.password});
 }
