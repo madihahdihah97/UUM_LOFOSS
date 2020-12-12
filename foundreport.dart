@@ -76,7 +76,7 @@ void initState() {
                decoration: 
                InputDecoration(
                  hintText: 'Enter type item',
-                 prefixIcon: Icon(Icons.account_circle, size:30,),
+                 prefixIcon: Icon(Icons.wallet_travel, size:30,),
                  fillColor: Colors.blue[100],
                  filled: true,
                  contentPadding: EdgeInsets.all(15),
@@ -88,7 +88,7 @@ void initState() {
                decoration: 
                InputDecoration(
                  hintText: 'Enter color and model',
-                 prefixIcon: Icon(Icons.account_circle, size:30,),
+                 prefixIcon: Icon(Icons.palette_outlined, size:30,),
                  fillColor: Colors.blue[100],
                  filled: true,
                  contentPadding: EdgeInsets.all(15),
@@ -101,7 +101,7 @@ void initState() {
                decoration: 
                InputDecoration(
                  hintText: 'Enter where found',
-                 prefixIcon: Icon(Icons.phone, size:30,),
+                 prefixIcon: Icon(Icons.place, size:30,),
                  fillColor: Colors.blue[100],
                  filled: true,
                  contentPadding: EdgeInsets.all(15),
@@ -113,7 +113,7 @@ void initState() {
                decoration: 
                InputDecoration(
                  hintText: 'Enter date found',
-                 prefixIcon: Icon(Icons.wallet_travel, size:30,),
+                 prefixIcon: Icon(Icons.date_range, size:30,),
                  fillColor: Colors.blue[100],
                  filled: true,
                  contentPadding: EdgeInsets.all(15),
@@ -125,7 +125,7 @@ void initState() {
                decoration: 
                InputDecoration(
                  hintText: 'Enter found by',
-                 prefixIcon: Icon(Icons.color_lens, size:30,),
+                 prefixIcon: Icon(Icons.person, size:30,),
                  fillColor: Colors.blue[100],
                  filled: true,
                  contentPadding: EdgeInsets.all(15),
@@ -137,7 +137,7 @@ void initState() {
                decoration: 
                InputDecoration(
                  hintText: 'Enter delivery method',
-                 prefixIcon: Icon(Icons.date_range, size:30,),
+                 prefixIcon: Icon(Icons.car_rental, size:30,),
                  fillColor: Colors.blue[100],
                  filled: true,
                  contentPadding: EdgeInsets.all(15),
